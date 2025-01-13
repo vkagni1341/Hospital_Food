@@ -1,0 +1,33 @@
+@charset "UTF-8";
+body {
+    font-family: Arial, sans-serif;
+}
+
+.hospital-logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+header {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-bottom: 2px solid #17a2b8;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    padding: 20px;
+    border: 1px solid #17a2b8;
+    border-radius: 10px;
+    background-color: #e9f7fb;
+}
+
+section h2 {
+    color: #17a2b8;
+    font-weight: bold;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Food Management Admin</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-info">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">
+                <img src="./image/logo2.jpg" alt="Hospital Logo" class="hospital-logo"> Hospital Food Manager
+            </a>
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="home.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="managePatient.html">PATIENT'S DETAIL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="deitChart.html">DIET CHART</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="innerPantry.html">PANTRY DETAIL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="deliveryPerson.html">DELIVERY PERSON</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <header class="bg-light text-center py-5">
+        <img src="./image/main02.png" alt="Hospital" class="img-fluid rounded">
+        <h1 class="mt-3">Hospital Food Management System</h1>
+        <p class="lead">Efficiently managing patient diets and meal deliveries.</p>
+    </header>
+    <section id="patients" class="my-5">
+            <h2 class="text-center text-info">Manage Patient Details</h2>
+            <form action="PatientServlet" method="post">
+    
+            
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="patientName" class="form-label">Patient Name</label>
+                        <input type="text" class="form-control" id="patientName" placeholder="Enter patient name">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="patientAge" class="form-label">Patient Age</label>
+                        <input type="text" class="form-control" id="patientAge" placeholder="Enter patient age">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="patientGender" class="form-label">Patient Gender</label>
+                        <input type="text" class="form-control" id="patientGender" placeholder="Enter patient gender">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="diseases" class="form-label">Diseases</label>
+                        <input type="text" class="form-control" id="diseases" placeholder="Enter diseases">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="allergies" class="form-label">Allergies</label>
+                        <input type="text" class="form-control" id="allergies" placeholder="Enter allergies">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="attendingDoctor" class="form-label">Attending Doctor </label>
+                        <input type="text" class="form-control" id="attendingDoctor" placeholder="Enter DR. Name">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="bedNumber" class="form-label">Bed Number</label>
+                        <input type="text" class="form-control" id="bedNumber" placeholder="Enter bed number">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="roomNumber" class="form-label">Room Number</label>
+                        <input type="text" class="form-control" id="roomNumber" placeholder="Enter room number">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="floorNumber" class="form-label">Floor Number</label>
+                        <input type="text" class="form-control" id="floorNumber" placeholder="Enter floor number">
+                    </div>
+                    
+                    <div class="col-md-6 mb-3">
+                        <label for="contact" class="form-label">Contact Information</label>
+                        <input type="text" class="form-control" id="contact" placeholder="Enter contact info">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="emergencyContact" class="form-label">Emergency Contact</label>
+                        <input type="text" class="form-control" id="emergencyContact" placeholder="Enter contact info">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-info">Save Details</button>
+            </form>
+        </section>
+        <footer class="bg-info text-white text-center py-4">
+        <div class="container">
+            <p>&copy; 2025 Hospital Food Management. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" class="text-white mx-2"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>Contact Us: <br> Email: info@hospitalfoodmanagement.com | Phone: +123 456 7890</p>
+        </div>
+    </footer>
